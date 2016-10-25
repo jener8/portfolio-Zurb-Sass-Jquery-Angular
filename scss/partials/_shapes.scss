@@ -1,0 +1,93 @@
+/*Shape Base
+=====================================*/
+
+ .rectangle {
+	width: 200px;
+	height: 100px;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+/*Colors
+=====================================*/
+
+#square-lg{
+		background-color:rgba( $square-color, .7 )
+}
+#square-md{
+	background-color:rgba( $square-color, .5 )
+}
+
+#square-sm{
+	background-color:rgba( $square-color, .2 )
+}
+
+#circle{
+	background-color:$circle-color;
+}
+
+#square-lg{
+		@include border-shape( lighten($square-color, 10%) )
+}
+#square-md{
+		@include border-shape( lighten($square-color, 20%) )
+}
+
+#square-sm{
+		@include border-shape( lighten($square-color, 30%) )
+}
+
+
+
+/*Positions
+=====================================*/
+
+ @include breakpoint(medium only) {
+
+.shape{
+	position: absolute;
+}
+
+#square-lg{
+	@include shape-position(3em, 2%)
+}
+#square-md{
+	@include shape-position(3em, 40%)
+}
+
+#square-sm{
+	@include shape-position(3em, 30%)
+}
+
+
+/*Size
+=====================================*/
+
+#square-lg{
+	@include shape-size(90%, 70%);
+}
+#square-md{
+	@include shape-size(60%, 50%);
+}
+
+#square-sm{
+	@include shape-size(45%, 14%);
+}
+
+}//end medium breakpoint
+
+/* Cleaner, but slightly less support: use "50%" as value */
+
+
+
+/*Shadows
+=====================================*/
+.shape{
+	 @include box-shadow(-7px 10px 23px 0px rgba(0,0,0,0.15));
+}

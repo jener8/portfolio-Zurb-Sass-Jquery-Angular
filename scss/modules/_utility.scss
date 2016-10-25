@@ -1,0 +1,17 @@
+
+
+@mixin shape-position($bottom, $left){
+	bottom: $bottom;
+	left: $left;
+};
+
+@mixin shape-size($width, $height){
+	width:$width;
+	height:$height;
+};
+
+@mixin border-shape($color){
+border-color: $color;
+border-style: solid;
+border-width: 2px;
+};
