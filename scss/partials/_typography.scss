@@ -2,6 +2,12 @@
 /*Typography
 =====================================*/
 
+@import "../../bower_components/fonts-raleway/scss/raleway";
+
+
+
+$raleway-font-path: "../bower_components/fonts-raleway/fonts/fonts-raleway";
+
 h1,h2,h3, h4{
 	font-family: $fixed-font-family;
 }

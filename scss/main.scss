@@ -1,10 +1,8 @@
-@import "compass";
 
 // Modules and Variables
-@import "partials/base";
+@import "partials/general";
 
 // Partials
-@import "partials/layout";
 @import "partials/shapes";
 @import "partials/typography";
 @import "partials/buttons";
@@ -12,6 +10,7 @@
 @import "partials/grids";
 @import "partials/animation";
 // ...
+
 
 // Third-party
 @import "vendor/colorpicker";

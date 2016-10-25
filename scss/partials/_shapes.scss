@@ -6,13 +6,7 @@
 	height: 100px;
 }
 
-.circle {
-	width: 100px;
-	height: 100px;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-}
+
 
 /*Colors
 =====================================*/
@@ -28,9 +22,7 @@
 	background-color:rgba( $square-color, .2 )
 }
 
-#circle{
-	background-color:$circle-color;
-}
+
 
 #square-lg{
 		@include border-shape( lighten($square-color, 10%) )
@@ -48,7 +40,7 @@
 /*Positions
 =====================================*/
 
- @include breakpoint(medium only) {
+
 
 .shape{
 	position: absolute;
@@ -80,7 +72,7 @@
 	@include shape-size(45%, 14%);
 }
 
-}//end medium breakpoint
+
 
 /* Cleaner, but slightly less support: use "50%" as value */
 
