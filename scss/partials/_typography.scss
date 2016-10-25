@@ -1,19 +1,24 @@
 
 /*Typography
 =====================================*/
-
+$raleway-font-path: "../bower_components/fonts-raleway/fonts/fonts-raleway";
 @import "../../bower_components/fonts-raleway/scss/raleway";
 
 
 
-$raleway-font-path: "../bower_components/fonts-raleway/fonts/fonts-raleway";
+
 
 h1,h2,h3, h4{
 	font-family: $fixed-font-family;
 }
 
 .frontpage{
-	h1,h2,h3, h4{
+	h4{
 		padding: 0.4em;
+		color: #424242;
+		text-shadow: $fp-text-shadow;
+	}
+	a h4{
+		color: #fff;
 	}
 }

@@ -57,19 +57,23 @@
 	@include shape-position(3em, 30%)
 }
 
+#round-button{
+	@include shape-position(3em, 40%)
+}
+
 
 /*Size
 =====================================*/
 
 #square-lg{
-	@include shape-size(90%, 70%);
+	@include shape-size(90%, 80%);
 }
 #square-md{
-	@include shape-size(60%, 50%);
+	@include shape-size(50%, 60%);
 }
 
 #square-sm{
-	@include shape-size(45%, 14%);
+	@include shape-size(14%, 45%);
 }
 
 
@@ -81,5 +85,5 @@
 /*Shadows
 =====================================*/
 .shape{
-	 @include box-shadow(-7px 10px 23px 0px rgba(0,0,0,0.15));
+	box-shadow: -4px 3px 7px 6px rgba(0,0,0,0.17);
 }

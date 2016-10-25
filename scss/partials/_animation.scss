@@ -1,0 +1,21 @@
+#square-sm{
+  animation: animationFrames ease-out 4s ;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+  transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames{
+  10%{
+    transform:  translate(0px,200%)  ;
+  }
+   20%, 23% {
+     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform:  translate(0px,4px)  ;
+  }
+
+  100%{
+      transform:  translate(0px,4px)  ;
+  }
+}
+

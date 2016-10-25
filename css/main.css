@@ -1,69 +1,173 @@
-/*
-Error: Undefined mixin 'box-shadow'.
-        on line 84 of /Users/jenny/SourceTree/Portfolio/scss/partials/_shapes.scss, in `box-shadow'
-        from line 84 of /Users/jenny/SourceTree/Portfolio/scss/partials/_shapes.scss
-        from line 6 of /Users/jenny/SourceTree/Portfolio/scss/main.scss
+/*Color Modules
+=================================*/
+/*Shape Base
+=====================================*/
+.rectangle {
+  width: 200px;
+  height: 100px; }
 
-Backtrace:
-/Users/jenny/SourceTree/Portfolio/scss/partials/_shapes.scss:84:in `box-shadow'
-/Users/jenny/SourceTree/Portfolio/scss/partials/_shapes.scss:84
-/Users/jenny/SourceTree/Portfolio/scss/main.scss:6
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:98:in `block in with_mixin'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:98:in `with_mixin'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:347:in `visit_mixin'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:431:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:326:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `block in with_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `with_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:423:in `run'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'box-shadow'.\A         on line 84 of /Users/jenny/SourceTree/Portfolio/scss/partials/_shapes.scss, in `box-shadow'\A         from line 84 of /Users/jenny/SourceTree/Portfolio/scss/partials/_shapes.scss\A         from line 6 of /Users/jenny/SourceTree/Portfolio/scss/main.scss"; }
+/*Colors
+=====================================*/
+#square-lg {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+#square-md {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+#square-sm {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+#square-lg {
+  border-color: white;
+  border-style: solid;
+  border-width: 2px; }
+
+#square-md {
+  border-color: white;
+  border-style: solid;
+  border-width: 2px; }
+
+#square-sm {
+  border-color: white;
+  border-style: solid;
+  border-width: 2px; }
+
+/*Positions
+=====================================*/
+.shape {
+  position: absolute; }
+
+#square-lg {
+  bottom: 3em;
+  left: 2%; }
+
+#square-md {
+  bottom: 3em;
+  left: 40%; }
+
+#square-sm {
+  bottom: 3em;
+  left: 30%; }
+
+#round-button {
+  bottom: 3em;
+  left: 40%; }
+
+/*Size
+=====================================*/
+#square-lg {
+  width: 90%;
+  height: 80%; }
+
+#square-md {
+  width: 50%;
+  height: 60%; }
+
+#square-sm {
+  width: 14%;
+  height: 45%; }
+
+/* Cleaner, but slightly less support: use "50%" as value */
+/*Shadows
+=====================================*/
+.shape {
+  box-shadow: -4px 3px 7px 6px rgba(0, 0, 0, 0.17); }
+
+/*Typography
+=====================================*/
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway Bold"), local("Raleway-Bold"), url("../bower_components/fonts-raleway/fonts/fonts-raleway/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway Extra Bold"), local("Raleway-ExtraBold"), url("../bower_components/fonts-raleway/fonts/fonts-raleway/Raleway-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway Extra Light"), local("Raleway-ExtraLight"), url("../bower_components/fonts-raleway/fonts/fonts-raleway/Raleway-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway Heavy"), local("Raleway-Heavy"), url("../bower_components/fonts-raleway/fonts/fonts-raleway/Raleway-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway Light"), local("Raleway-Light"), url("../bower_components/fonts-raleway/fonts/fonts-raleway/Raleway-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway Medium"), local("Raleway-Medium"), url("../bower_components/fonts-raleway/fonts/fonts-raleway/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway Regular"), local("Raleway-Regular"), url("../bower_components/fonts-raleway/fonts/fonts-raleway/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway Semi Bold"), local("Raleway-SemiBold"), url("../bower_components/fonts-raleway/fonts/fonts-raleway/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: local("Raleway Thin"), local("Raleway-Thin"), url("../bower_components/fonts-raleway/fonts/fonts-raleway/Raleway-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+h1, h2, h3, h4 {
+  font-family: "Raleway"; }
+
+.frontpage h4 {
+  padding: 0.4em;
+  color: #424242;
+  text-shadow: -1px 1px 4px #a29696; }
+.frontpage a h4 {
+  color: #fff; }
+
+#round-button {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 100px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 45px 16px 45px 16px;
+  text-decoration: none; }
+  #round-button:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none; }
+
+body {
+  background-color: #00b8d4; }
+
+#square-sm {
+  animation: animationFrames ease-out 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%; }
+
+@keyframes animationFrames {
+  10% {
+    transform: translate(0px, 200%); }
+  20%, 23% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate(0px, 4px); }
+  100% {
+    transform: translate(0px, 4px); } }
