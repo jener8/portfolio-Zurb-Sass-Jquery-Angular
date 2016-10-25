@@ -1,4 +1,11 @@
 
+@mixin shape-position-left($left){
+		left: $left;
+}
+
+@mixin shape-position-bottom($bottom){
+			bottom: $bottom;
+}
 
 @mixin shape-position($bottom, $left){
 	bottom: $bottom;

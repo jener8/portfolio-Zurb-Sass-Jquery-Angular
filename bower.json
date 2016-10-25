@@ -11,7 +11,8 @@
   "dependencies": {
     "foundation-sites": "~6.2.0",
     "motion-ui": "~1.2.2",
-    "fonts-raleway": "^0.0.4"
+    "fonts-raleway": "^0.0.4",
+    "compass-sass-mixins": "*"
   },
   "ignore": [
     "**/.*",

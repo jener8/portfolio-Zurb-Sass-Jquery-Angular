@@ -53,9 +53,10 @@
 	@include shape-position(3em, 40%)
 }
 
-#square-sm{
-	@include shape-position(3em, 30%)
-}
+// #square-sm{
+// 	@include shape-position(3em, 30%);
+
+// }
 
 #round-button{
 	@include shape-position(3em, 40%)

@@ -1,21 +1,49 @@
-#square-sm{
-  animation: animationFrames ease-out 4s ;
-  animation-iteration-count: 1;
-  animation-fill-mode:forwards;
-  transform-origin: 50% 50%;
+@import "../../bower_components/compass-sass-mixins/lib/animate";
+
+@mixin bouncein($name, $y-axisa, $y-axisb, $y-axisc, $y-axisd){
+  @keyframes $name{
+    0%{
+        @include shape-position-bottom($y-axisa);
+    }
+    20%, 40% {
+        @include shape-position-bottom($y-axisb);
+    }
+    30% {
+         @include shape-position-bottom($y-axisc);
+    }
+  45% {
+     @include shape-position-bottom($y-axisd);
+   }
+}
+};
+
+
+#square-sm{ 
+     @include shape-position-left(30%);
+    @include bouncein(bounce, 0em, 3em, 0em, 3em);
+ animation: bounce 2s ease-out 1;
+  animation-delay: 2s;
+  animation-fill-mode:both;
+
+
 }
 
-@keyframes animationFrames{
-  10%{
-    transform:  translate(0px,200%)  ;
-  }
-   20%, 23% {
-     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform:  translate(0px,4px)  ;
-  }
 
-  100%{
-      transform:  translate(0px,4px)  ;
-  }
-}
+
+//   @keyframes $name{
+//     0%{
+//         @include shape-position(-50%);
+//     }
+//     20%, 40% {
+//         @include shape-position(3em);
+//     }
+//     30% {
+//          @include shape-position(0em);
+//     }
+//   45% {
+//      @include shape-position(3em);
+//    }
+// }
+// }
+
 
