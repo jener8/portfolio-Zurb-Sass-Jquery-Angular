@@ -22,3 +22,30 @@ $fixed-line-height: $base-line-height;
 // Headings
 $header-font-weight: $bold;
 
+
+//Layout
+body{
+	background-color: $base-color;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+#portfolio{
+	position: relative;
+	zindex: 2000;
+}
+
+.portfolio-column{
+	height: 100vh; 
+	width: 50vw; 
+	margin-top: -2%;
+}
+
+.portfolio-left{
+	background: pink;
+}
+
+portfolio-right{
+	background: blue;
+}

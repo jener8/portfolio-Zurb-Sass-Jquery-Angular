@@ -1,3 +1,7 @@
+/*Animation
+======================================*/
+
+
 @import "../../bower_components/compass-sass-mixins/lib/animate";
 
 
@@ -88,7 +92,80 @@
   animation-fill-mode: both;
    
 
+
+
+//Button Bounce FrontPage Animation
+
+  @include breakpoint(small smallmedium ) {
+
+    @keyframes bouncebtn{
+    0%{
+        @include shape-position(100%, 60%);
+    }
+    10%, 30% {
+        @include shape-position(50%, 60%);
+    }
+    20% {
+         @include shape-position(60%, 60%);
+    }
+  35% {
+     @include shape-position(50%, 60%);
+   }
+    100% {
+     @include shape-position(50%, 60%);
+   }
 }
+
+  }
+
+
+  @include breakpoint(smalllarge only) {
+
+    @keyframes bouncebtn{
+    0%{
+        @include shape-position(100%, 60%);
+    }
+    10%, 30% {
+        @include shape-position(55%, 60%);
+    }
+    20% {
+         @include shape-position(45%, 60%);
+    }
+  35% {
+     @include shape-position(55%, 60%);
+   }
+    100% {
+     @include shape-position(55%, 60%);
+   }
+}
+
+  }
+
+
+   @include breakpoint(medium mediumlarge) {
+
+@keyframes bouncebtn{
+    0%{
+        @include shape-position(100%, 70%);
+    }
+    10%, 30% {
+        @include shape-position(3em, 70%);
+    }
+    20% {
+         @include shape-position(5em, 70%);
+    }
+  35% {
+     @include shape-position(3em, 70%);
+   }
+    100% {
+     @include shape-position(3em, 70%);
+   }
+}
+
+
+  }
+
+   @include breakpoint(large only) {
 
 @keyframes bouncebtn{
     0%{
@@ -109,6 +186,9 @@
 }
 
 
-// #round-button{
-//   @include shape-position(3em, 40%)
-// }
+  }
+   @include breakpoint(xlarge up) {
+  }
+
+
+}
