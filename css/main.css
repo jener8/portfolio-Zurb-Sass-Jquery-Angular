@@ -37,32 +37,56 @@
 .shape {
   position: absolute; }
 
-#square-lg {
-  bottom: 3em;
-  left: 2%; }
-
-#square-md {
-  bottom: 3em;
-  left: 40%; }
-
-#round-button {
-  bottom: 3em;
-  left: 40%; }
-
 /*Size
 =====================================*/
-#square-lg {
-  width: 90%;
-  height: 80%; }
+@media screen and (max-width: 39.9375em) {
+  #square-lg {
+    width: 95%;
+    height: 50%; }
 
-#square-md {
-  width: 50%;
-  height: 60%; }
+  #square-md {
+    width: 60%;
+    height: 40%; }
 
-#square-sm {
-  width: 14%;
-  height: 45%; }
+  #square-sm {
+    width: 30%;
+    height: 20%; } }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  #square-lg {
+    width: 90%;
+    height: 80%; }
 
+  #square-md {
+    width: 50%;
+    height: 60%; }
+
+  #square-sm {
+    width: 14%;
+    height: 45%; } }
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  #square-lg {
+    width: 90%;
+    height: 80%; }
+
+  #square-md {
+    width: 50%;
+    height: 60%; }
+
+  #square-sm {
+    width: 14%;
+    height: 45%; } }
+@media screen and (min-width: 75em) {
+  #square-lg {
+    width: 90%;
+    height: 80%; }
+
+  #square-md {
+    width: 50%;
+    height: 60%; }
+
+  #square-sm {
+    width: 14%;
+    height: 45%; } }
 /* Cleaner, but slightly less support: use "50%" as value */
 /*Shadows
 =====================================*/
@@ -119,7 +143,7 @@
 h1, h2, h3, h4 {
   font-family: "Raleway"; }
 
-.frontpage h4 {
+.frontpage h2, .frontpage h4 {
   padding: 0.4em;
   color: #424242;
   text-shadow: -1px 1px 4px #a29696; }
@@ -7189,16 +7213,102 @@ body {
     -o-transform: translateX(-100%) rotate(-120deg);
     transform: translateX(-100%) rotate(-120deg); } }
 #square-sm {
-  left: 30%;
-  animation: bounce 2s ease-out 1;
+  -webkit-animation: bouncesm 2s ease-out 1;
+  -moz-animation: bouncesm 2s ease-out 1;
+  -ms-animation: bouncesm 2s ease-out 1;
+  -o-animation: bouncesm 2s ease-out 1;
+  animation: bouncesm 2s ease-out 1;
   animation-delay: 2s;
   animation-fill-mode: both; }
-@keyframes $name {
+
+@keyframes bouncesm {
   0% {
-    bottom: 0em; }
+    bottom: -50%;
+    left: 35%; }
   20%, 40% {
-    bottom: 3em; }
+    bottom: 3em;
+    left: 35%; }
   30% {
-    bottom: 0em; }
+    bottom: 0em;
+    left: 35%; }
   45% {
-    bottom: 3em; } }
+    bottom: 3em;
+    left: 35%; }
+  100% {
+    bottom: 3em;
+    left: 35%; } }
+#square-md {
+  -webkit-animation: bouncemd 2s ease-out 1;
+  -moz-animation: bouncemd 2s ease-out 1;
+  -ms-animation: bouncemd 2s ease-out 1;
+  -o-animation: bouncemd 2s ease-out 1;
+  animation: bouncemd 2s ease-out 1;
+  animation-delay: 2s;
+  animation-fill-mode: both; }
+
+@keyframes bouncemd {
+  0% {
+    bottom: 3em;
+    left: 150%; }
+  20%, 40% {
+    bottom: 3em;
+    left: 30%; }
+  30% {
+    bottom: 3em;
+    left: 10%; }
+  45% {
+    bottom: 3em;
+    left: 30%; }
+  100% {
+    bottom: 3em;
+    left: 30%; } }
+#square-lg {
+  -webkit-animation: bouncelg 2s ease-out 1;
+  -moz-animation: bouncelg 2s ease-out 1;
+  -ms-animation: bouncelg 2s ease-out 1;
+  -o-animation: bouncelg 2s ease-out 1;
+  animation: bouncelg 2s ease-out 1;
+  animation-delay: 2s;
+  animation-fill-mode: both; }
+
+@keyframes bouncelg {
+  0% {
+    bottom: 3em;
+    left: -100%; }
+  20%, 40% {
+    bottom: 3em;
+    left: 2%; }
+  30% {
+    bottom: 3em;
+    left: 5%; }
+  45% {
+    bottom: 3em;
+    left: 2%; }
+  100% {
+    bottom: 3em;
+    left: 2%; } }
+#round-button {
+  -webkit-animation: bouncebtn 2s ease-out 1;
+  -moz-animation: bouncebtn 2s ease-out 1;
+  -ms-animation: bouncebtn 2s ease-out 1;
+  -o-animation: bouncebtn 2s ease-out 1;
+  animation: bouncebtn 2s ease-out 1;
+  animation-delay: 2.2s;
+  animation-fill-mode: both; }
+
+@keyframes bouncebtn {
+  0% {
+    bottom: 100%;
+    left: 40%; }
+  10%, 30% {
+    bottom: 3em;
+    left: 40%; }
+  20% {
+    bottom: 5em;
+    left: 40%; }
+  35% {
+    bottom: 3em;
+    left: 40%; }
+  100% {
+    bottom: 3em;
+    left: 40%; } }

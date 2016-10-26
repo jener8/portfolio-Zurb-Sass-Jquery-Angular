@@ -46,25 +46,27 @@
 	position: absolute;
 }
 
-#square-lg{
-	@include shape-position(3em, 2%)
-}
-#square-md{
-	@include shape-position(3em, 40%)
-}
-
-// #square-sm{
-// 	@include shape-position(3em, 30%);
-
-// }
-
-#round-button{
-	@include shape-position(3em, 40%)
-}
-
 
 /*Size
 =====================================*/
+
+  @include breakpoint(small only) {
+
+
+#square-lg{
+	@include shape-size(95%, 50%);
+}
+#square-md{
+	@include shape-size(60%, 40%);
+}
+
+#square-sm{
+	@include shape-size(30%, 20%);
+}
+
+}
+  @include breakpoint(medium only) {
+
 
 #square-lg{
 	@include shape-size(90%, 80%);
@@ -78,6 +80,44 @@
 }
 
 
+
+}
+
+  @include breakpoint(large only) {
+
+#square-lg{
+	@include shape-size(90%, 80%);
+}
+#square-md{
+	@include shape-size(50%, 60%);
+}
+
+#square-sm{
+	@include shape-size(14%, 45%);
+}
+
+
+
+
+}
+
+  @include breakpoint(xlarge up) {
+
+
+#square-lg{
+	@include shape-size(90%, 80%);
+}
+#square-md{
+	@include shape-size(50%, 60%);
+}
+
+#square-sm{
+	@include shape-size(14%, 45%);
+}
+
+
+
+}
 
 /* Cleaner, but slightly less support: use "50%" as value */
 

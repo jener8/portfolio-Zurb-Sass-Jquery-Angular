@@ -1,49 +1,114 @@
 @import "../../bower_components/compass-sass-mixins/lib/animate";
 
-@mixin bouncein($name, $y-axisa, $y-axisb, $y-axisc, $y-axisd){
-  @keyframes $name{
-    0%{
-        @include shape-position-bottom($y-axisa);
-    }
-    20%, 40% {
-        @include shape-position-bottom($y-axisb);
-    }
-    30% {
-         @include shape-position-bottom($y-axisc);
-    }
-  45% {
-     @include shape-position-bottom($y-axisd);
-   }
-}
-};
-
 
 #square-sm{ 
-     @include shape-position-left(30%);
-    @include bouncein(bounce, 0em, 3em, 0em, 3em);
- animation: bounce 2s ease-out 1;
+  @include animation(bouncesm 2s ease-out 1);
   animation-delay: 2s;
-  animation-fill-mode:both;
+  animation-fill-mode: both;
+   
 
+}
 
+@keyframes bouncesm{
+    0%{
+        @include shape-position(-50%, 35%);
+    }
+    20%, 40% {
+        @include shape-position(3em, 35%);
+    }
+    30% {
+         @include shape-position(0em, 35%);
+    }
+  45% {
+     @include shape-position(3em, 35%);
+   }
+    100% {
+     @include shape-position(3em, 35%);
+   }
 }
 
 
 
-//   @keyframes $name{
-//     0%{
-//         @include shape-position(-50%);
-//     }
-//     20%, 40% {
-//         @include shape-position(3em);
-//     }
-//     30% {
-//          @include shape-position(0em);
-//     }
-//   45% {
-//      @include shape-position(3em);
-//    }
-// }
-// }
+#square-md{ 
+  @include animation(bouncemd 2s ease-out 1);
+  animation-delay: 2s;
+  animation-fill-mode: both;
+   
+
+}
+
+@keyframes bouncemd{
+    0%{
+        @include shape-position(3em, 150%);
+    }
+    20%, 40% {
+        @include shape-position(3em, 30%);
+    }
+    30% {
+         @include shape-position(3em, 10%);
+    }
+  45% {
+     @include shape-position(3em, 30%);
+   }
+    100% {
+     @include shape-position(3em, 30%);
+   }
+}
 
 
+#square-lg{ 
+  @include animation(bouncelg 2s ease-out 1);
+  animation-delay: 2s;
+  animation-fill-mode: both;
+   
+
+}
+
+@keyframes bouncelg{
+    0%{
+        @include shape-position(3em, -100%);
+    }
+    20%, 40% {
+        @include shape-position(3em, 2%);
+    }
+    30% {
+         @include shape-position(3em, 5%);
+    }
+  45% {
+     @include shape-position(3em, 2%);
+   }
+    100% {
+     @include shape-position(3em, 2%);
+   }
+}
+
+#round-button{ 
+  @include animation(bouncebtn 2s ease-out 1);
+  animation-delay: 2.2s;
+  animation-fill-mode: both;
+   
+
+}
+
+@keyframes bouncebtn{
+    0%{
+        @include shape-position(100%, 40%);
+    }
+    10%, 30% {
+        @include shape-position(3em, 40%);
+    }
+    20% {
+         @include shape-position(5em, 40%);
+    }
+  35% {
+     @include shape-position(3em, 40%);
+   }
+    100% {
+     @include shape-position(3em, 40%);
+   }
+}
+
+
+// #round-button{
+//   @include shape-position(3em, 40%)
+// }
